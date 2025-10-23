@@ -1,5 +1,5 @@
 // /api/paypal/activate — verifies a subscription by ID
-const { config } = require("../../../config");
+const { config } = require("../config");
 
 async function getPayPalAccessToken() {
   const creds = Buffer.from(`${config.paypal.clientId}:${config.paypal.clientSecret}`).toString("base64");
